@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #moving-image {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+    }
+
+    @keyframes move-around {
+      0% { top: 10%; left: 5%; }
+      25% { top: 10%; left: calc(95% - 100px); }
+      50% { top: calc(90% - 100px); left: calc(95% - 100px); }
+      75% { top: calc(90% - 100px); left: 5%; }
+      100% { top: 10%; left: 5%; }
+    }
+
+    #moving-image {
+      animation: move-around 10s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img id="moving-image" src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png">
+</body>
+</html>
