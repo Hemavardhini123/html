@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(168, 60, 116);">
+    
+    <input type="text" id = "myInput" style="background-color: aquamarine;">
+    <script>
+        const input = document.getElementById('myInput');
+
+        function handlekeyDown(event)
+        {
+            if(event.keyCode == 13)
+            {
+                alert('You entered: ' + input.value);
+
+            }
+        }
+        input.addEventListener('keydown',handlekeyDown);
+
+    </script>
+</body>
+</html>
