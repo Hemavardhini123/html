@@ -1,0 +1,8 @@
+#logo{
+    font-family: cursive;
+    color:#FF6666;
+}
+.carousel-item img{
+    width: 100%;
+    height: 55vh;
+}
